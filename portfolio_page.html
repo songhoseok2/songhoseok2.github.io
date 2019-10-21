@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" >
 <meta charset="UTF-8">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel="stylesheet" href="./style.css">
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-<script  src="./script.js"></script>
-<div class="container-fluid">
-  <head>
-    <title>Portfolio</title>
-  </head>
-
-  <nav id="myNavbar" class="navbar navbar-collapse collapse navbar-inverse navbar-fixed-top navbar_width">
-    <ul class="nav navbar-nav">
-      <li><a href="about_page.html">About</a></li>
-      <li><a href="portfolio_page.html" class="active">Portfolio</a></li>
-    </ul>
-  </nav>
-
-  <body style="padding-top: 5vh;">
+  <div id="portfolio_container" class="portfolio_page">
     <header>
       <h1 id="test" class="text-primary text-center">Ho Seok Song's portfolio</h1>
     </header>
-      <hr>
-      
+    <hr>
+    
     <h2 id="project1" class="project_title lighter_color">project1</h2>
     <div class="entry">
-      <div class="thumbnail">
+      <div class="thumbnail" id="thumbnail_id">
         <img src="https://dummyimage.com/500x500/000/fff">
       </div>
       <div class="features">
@@ -77,8 +60,5 @@
         </div>
       </div>
     </div>
-
-
-  </body>
-</div>
+  </div>
 </html>
