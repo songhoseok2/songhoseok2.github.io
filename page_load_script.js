@@ -3,10 +3,8 @@
 $(document).ready(
     function()
     {
-        // $("#content_container").load("about_page.html #about_container");
-        // $("#content_container").addClass("about_page");
-        $("#content_container").load("contact_page.html #contact_container");
-        $("#content_container").addClass("contact_page");
+        $("#content_container").load("about_page.html #about_container");
+        $("#content_container").addClass("about_page");
     },
 
     $(document).on("click", "#nav_bar_about", function()
