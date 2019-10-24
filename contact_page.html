@@ -8,12 +8,67 @@
     <p> Test </p>
     <p> Test </p>
 
+    <h2>Feel free to email me at: hoseok@umich.edu</h2>
+        
+    <iframe name="hiddenFrame" style="position:absolute; top:-1px; left:-1px; width:1px; height:1px;"></iframe>
+
+    <!--form submission code from: https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server-->
+    <form name="email_form" method="POST" id="gform" class="gform pure-form pure-form-stacked" data-email="from_email@example.com"
+          action="https://script.google.com/macros/s/AKfycbztjkBf1-F7L8XCBezkwgvKjf0OtIdNqpbBmnrK/exec"
+          target="hiddenFrame"
+          onsubmit="alert('Your Email was successfully sent. Thank you for contacting me.');">
+
+
+      <div class="row">
+          <div class="col-xs-3">
+            <label for="name" style="font-size: 14px;">Name: </label>
+          </div>
+          <div class="col-xs-9">
+            <input id="name" name="name_input" class="form-control" required placeholder="Your name here"/>
+          </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+          <div class="col-xs-3">
+              <label for="email" style="font-size: 14px;">Email Address: </label>
+          </div>
+          <div class="col-xs-9">
+            <input id="email" name="email_input" name="email" class="form-control" type="email" value="" required placeholder="your_email@example.com"/>
+          </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+          <div class="col-xs-3">
+            <label for="message" style="font-size: 14px;">Message: </label>
+          </div>
+          <div class="col-xs-9">
+            <textarea id="message" name="message_input" name="message" rows="10" class="form-control" style="height: 20vh;" required placeholder="Enter your message here."></textarea>
+          </div>
+        </div>
+      
+      <br>
+
+      <button id="send_button" class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-envelope"></span> Send 
+      </button>
+      <button class="btn btn-danger btn-lg" type="reset">
+        <span class="glyphicon glyphicon-trash"></span> Reset
+      </button>
+    </form>
+
     <br>
-    
+    <br>
+
+    <h2>...or connect to me through: </h2>
     <div class="social_buttons_container">
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-linkedin"></i></a>
       <a href="#"><i class="fa fa-github"></i></a>
+
     </div>
   </div>
 </html>

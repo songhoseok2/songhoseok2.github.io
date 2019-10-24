@@ -1,5 +1,4 @@
 /*jshint esversion: 6 */
-
 $(document).ready(
     function()
     {
@@ -73,7 +72,7 @@ $(document).ready(
             $("#content_container").load("contact_page.html #contact_container");
             $("#content_container").addClass("contact_page");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
-            //overflow must remain hidden for contact page
+            $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
             $(".active").removeClass("active");
             $("#nav_bar_contact").addClass("active");
         }, 1000);
