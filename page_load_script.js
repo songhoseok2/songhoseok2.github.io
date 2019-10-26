@@ -72,7 +72,7 @@ $(document).ready(
             $("#content_container").load("contact_page.html #contact_container");
             $("#content_container").addClass("contact_page");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
-            $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
+            //overflow must remain hidden for contact page
             $(".active").removeClass("active");
             $("#nav_bar_contact").addClass("active");
         }, 1000);
