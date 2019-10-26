@@ -24,7 +24,7 @@ $(document).ready(
         }, 1000);
     }),
 
-    $(document).on("click", "#nav_bar_portfolio", function()
+    $(document).on("click", "#nav_bar_projects", function()
     {
         $("body").css("overflow", "hidden");
         $("#wrapper_for_animation").addClass("animated fadeOutUp");
@@ -33,12 +33,12 @@ $(document).ready(
             $("#wrapper_for_animation").removeClass();
             $("#content_container").removeClass();
             $("#content_container").empty();
-            $("#content_container").load("portfolio_page.html #portfolio_container");
-            $("#content_container").addClass("history_portfolio_page");
+            $("#content_container").load("projects_page.html #projects_container");
+            $("#content_container").addClass("history_projects_page");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
             $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
             $(".active").removeClass("active");
-            $("#nav_bar_portfolio").addClass("active");
+            $("#nav_bar_projects").addClass("active");
         }, 1000);
     }),
 
@@ -52,7 +52,7 @@ $(document).ready(
             $("#content_container").removeClass();
             $("#content_container").empty();
             $("#content_container").load("history_page.html #history_container");
-            $("#content_container").addClass("history_portfolio_page");
+            $("#content_container").addClass("history_projects_page");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
             $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
             $(".active").removeClass("active");
@@ -72,7 +72,7 @@ $(document).ready(
             $("#content_container").load("contact_page.html #contact_container");
             $("#content_container").addClass("contact_page");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
-            //overflow must remain hidden for contact page
+            $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
             $(".active").removeClass("active");
             $("#nav_bar_contact").addClass("active");
         }, 1000);
