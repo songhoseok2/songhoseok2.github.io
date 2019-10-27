@@ -6,54 +6,138 @@
       <h1 class="text-center">Projects</h1>
     </header>
     <hr>
-    
-    <h2 class="project_title">project1</h2>
-    <div class="entry">
-      <div class="thumbnail" id="thumbnail_id">
-        <img src="https://dummyimage.com/500x500/000/fff">
-      </div>
-      <div class="features">
-        <p>asdfjabfjnwljfnaskjdfkjasdfhjawhefjkalwef
-          asdfasodfnajsdfnklasndfkljansdkjfadsf
-          aslfjabsldfjnaskjdfaklsdnfjaslkfnalkjsdf
-          askfdkljabsfljkasbnjlbaoubnwioniafn;oasd;f
-          alsdkfjbaljaosfnjsfnasf
-          las;dfnjasdnfjkasndfkljasdnfljasjfkalsdf
-          aksdjfnasdfnlaksdfnlkasnfdjlasnfjasdf
-        </p>
-      </div>
+
+    <div class="title">
+      <a class="project_title" href="https://github.com/songhoseok2/PC_controller">
+        PC_Controller Android App
+      </a>
     </div>
-      
-    <h2 class="project_title">3DSSPP</h2>
     <div class="entry">
       <div class="thumbnail">
-        <img src="https://dummyimage.com/500x500/000/fff">
+        <img class="thumbnail_picture" src="./PC_controller_app_example.jpg" alt="A picture of the Application">
       </div>
       <div class="features">
         <p>
-          3DSSPP software is a C++ job simulation program that provides posture data, force parameters, static strength requirements for tasks such as lifts, presses, pushes, and pulls.
-          Updated outdated codes to newer versions and made the project compatible with Visual Studio 2015
-          Worked on the debugging and optimization by drastically improving the efficiency of rendering human module
-          Designed and developed the UI of the software as the professor requested
-          Programmed ankle restraints of human module and manipulated simulation results screen
+          An Android application that estabilshes a Transmission Control Protocol (TCP) connection 
+          between the app's client written in Java and a Desktop Computer's server written in 
+          Python to grant the user a remote access to the PC. The app features a full virtual 
+          keyboard, mouse cursor movement, First Person Shooter game control 
+          (my personal interests in games) and a list of hotkeys for the computer.
         </p>
       </div>
     </div>
-      
-    <h2 class="project_title">project3</h2>
+
+    <div class="title">
+      <a class="project_title" href="https://github.com/songhoseok2/TCP_Project">
+        TCP Project
+      </a>
+    </div>
     <div class="entry">
       <div class="thumbnail">
-        <img src="https://dummyimage.com/500x500/000/fff">
+        <img class="thumbnail_picture" src="./TCP_project_picture.png" alt="A picture of the TCP_project">
       </div>
       <div class="features">
-        <p>tefnaskdfnaksdfnlasndfkjalbfwnvhoihwbevpbehraiwjbroiwaejrapobiwbjvnowiejnaiw
-          whviwobvalwevbajwkefjjiubohrtoaanish sjgpkofsouithjkpofkijgkmfpoeij
-          suinjklmopijgxnklmfdsoijgfkmdlsfopkgijsfmxblvk;d,cskofijgfxm,lcsdgjnkiouhbjdmnksi
-          ubgfxn kmscdiojhbnkjfsdiojfdxhbgnvkfdiojxgdiojfxgklmfxgjlmk
-          xkncdmlsziojfxgdklmscpoijfxg knmvlcpdiojfxgklmvzdpokfijgfxdkposfijgfkdvnjkdsiojdnkfiofjdx
-          ughbjdoiewahgbsjdiodejhbfxdkmzsijofhdbnkjsfihdbcjsfyucjscuhfvb nkdcjsihfvbhjco
+        <p>
+            A project that simulates a simple bank account balance tracker. Program is able to read 
+            or write on the bank account balances from multiple users simultaneously through a TCP 
+            Window socket connection using multi-threaded system. The bank balance data is managed 
+            through a set-associative cache system with features such as Least Recently Used(LRU), 
+            Dirty Bit and write-back policies.
         </p>
       </div>
     </div>
+
+    <div class="title">
+        <a class="project_title" href="https://github.com/songhoseok2/news_filter">
+          News Filter
+        </a>
+      </div>
+      <div class="entry">
+        <div class="thumbnail">
+          <img class="thumbnail_picture" src="./news_filter_example.jpg" alt="A picture of the news_filter project">
+        </div>
+        <div class="features">
+          <p>
+            A Python script that allows the user to view all news articles from CNN / Fox News 
+            except for the ones that contain the keywords user inputs into the provided filter.
+            Unlike the conventional filters that provide articles that contain the keyword and 
+            discard the rest, this filter in opposite is used to view all the general headlines 
+            while discarding the ones that contain the keyword. This filter is useful when the user 
+            wishes to view all the headlines in the main page spanning multiple sections discarding 
+            only the unwanted articles.            
+          </p>
+        </div>
+      </div>
+
+    <div class="title">
+        <h2 class="project_title">
+          Military base sentry / 
+          <br>
+          guard duty scheduler
+        </h2>
+      </div>
+      <div class="entry">
+        <div class="thumbnail">
+          <img class="thumbnail_picture" src="./OPSEC.png" alt="OPSEC warning picture">
+        </div>
+        <div class="features">
+          <p>
+              Computerized the old military sentry / guard duty scheduling system by developing a 
+              C++ program to automatically generate a schedule that is fairer and more efficient 
+              than creating the schedule by hand. I Designed the data structures including a custom 
+              functor for the priority queue based on the conventional scheduling system and 
+              modified the program regularly as the scheduling rules changed or as the CO requested.
+          </p>
+        </div>
+      </div>
+    
+    <div class="title">
+        <a class="project_title" href="https://c4e.engin.umich.edu/tools-services/3dsspp-software/">
+          3D Static Strength 
+          <br>
+          Prediction Program (3DSSPP)
+        </a>
+      </div>
+      <div class="entry">
+        <div class="thumbnail">
+          <!-- picture from: https://c4e.engin.umich.edu/tools-services/3dsspp-software/ -->
+          <img class="thumbnail_picture" src="./3dsspp705-1024x706.png" alt="A picture of the 3DSSPP">
+        </div>
+        <div class="features">
+          <p>
+              3DSSPP software is a C++ job simulation program that provides posture data, 
+              force parameters, male/ female anthropometry, static strength requirements for tasks 
+              such as lifts, presses, pushes, and pulls. The software can aid the analyst in designs 
+              and redesigns prior to the actual construction or reconstruction of the workplace or 
+              task.
+              <br>
+              I was responsible for the updates of the outdated codes to newer versions to make the 
+              project compatible with Visual Studio 2015, design of the UI, debugging and 
+              optimization of human module rendering and the development of the module's ankle 
+              restraints.
+          </p>
+        </div>
+      </div>
+
+      <div class="title">
+          <a class="project_title" href="https://github.com/songhoseok2/GameJam_poduct">
+            Game Jam 2016
+          </a>
+        </div>
+        <div class="entry">
+          <div class="thumbnail">
+            <img class="thumbnail_picture" src="./game_jam_product.png" alt="A picture of the game made in the Game Jam">
+          </div>
+          <div class="features">
+            <p>
+                A real time strategy (RTS) game developed with Unity engine during the Game Jam 
+                hosted by the Wolverine Soft. The game was developed by a team of 2 programmers, 
+                1 musician and an artist. The player is a king who tries to protect the castle from 
+                the rioters, and controls the soldiers spawnable during the preparation phase to 
+                fight enemies that grow larger in number as the stage progresses.
+            </p>
+          </div>
+        </div>
+
   </div>
 </html>

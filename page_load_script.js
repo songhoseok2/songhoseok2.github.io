@@ -24,24 +24,6 @@ $(document).ready(
         }, 1000);
     }),
 
-    $(document).on("click", "#nav_bar_projects", function()
-    {
-        $("body").css("overflow", "hidden");
-        $("#wrapper_for_animation").addClass("animated fadeOutUp");
-        setTimeout(function()
-        {
-            $("#wrapper_for_animation").removeClass();
-            $("#content_container").removeClass();
-            $("#content_container").empty();
-            $("#content_container").load("projects_page.html #projects_container");
-            $("#content_container").addClass("history_projects_page");
-            $("#wrapper_for_animation").addClass("animated fadeInDown");
-            $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
-            $(".active").removeClass("active");
-            $("#nav_bar_projects").addClass("active");
-        }, 1000);
-    }),
-
     $(document).on("click", "#nav_bar_history", function()
     {        
         $("body").css("overflow", "hidden");
@@ -57,6 +39,24 @@ $(document).ready(
             $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
             $(".active").removeClass("active");
             $("#nav_bar_history").addClass("active");
+        }, 1000);
+    }),
+
+    $(document).on("click", "#nav_bar_projects", function()
+    {
+        $("body").css("overflow", "hidden");
+        $("#wrapper_for_animation").addClass("animated fadeOutUp");
+        setTimeout(function()
+        {
+            $("#wrapper_for_animation").removeClass();
+            $("#content_container").removeClass();
+            $("#content_container").empty();
+            $("#content_container").load("projects_page.html #projects_container");
+            $("#content_container").addClass("history_projects_page");
+            $("#wrapper_for_animation").addClass("animated fadeInDown");
+            $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
+            $(".active").removeClass("active");
+            $("#nav_bar_projects").addClass("active");
         }, 1000);
     }),
 
