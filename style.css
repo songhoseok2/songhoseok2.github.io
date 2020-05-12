@@ -1,6 +1,6 @@
 * 
 {
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 body 
@@ -85,6 +85,30 @@ p
   color: #C6C3FF;
 }
 
+.academics_projects_description
+{
+  list-style-type: disc;
+  font-size: 25px;
+  color: #C6C3FF;
+}
+
+.academics_classes
+{
+  margin-bottom: 200px;
+}
+
+.sub_header
+{
+  font-size: 20px;
+  line-height: 15pt;
+  color: #F0F0FC
+}
+
+.closer_line_heights
+{
+  line-height: 5pt;
+}
+
 .title
 {
   margin-left: 65px;
@@ -96,7 +120,7 @@ p
   color: #9590FF
 }
 
-.duration
+.project_subtitle
 {
   font-size: 20px;
   color: #F0F0FC
@@ -200,7 +224,7 @@ p
     font-size: 30px;
   }
 
-  .duration
+  .project_subtitle
   {
     font-size: 15px;
   }
@@ -226,7 +250,7 @@ p
     font-size: 30px;
   }
 
-  .duration
+  .project_subtitle
   {
     font-size: 10px;
   }

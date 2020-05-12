@@ -42,6 +42,24 @@ $(document).ready(
         }, 1000);
     }),
 
+	    $(document).on("click", "#nav_bar_academics", function()
+    {
+        $("body").css("overflow", "hidden");
+        $("#wrapper_for_animation").addClass("animated fadeOutUp");
+        setTimeout(function()
+        {
+            $("#wrapper_for_animation").removeClass();
+            $("#content_container").removeClass();
+            $("#content_container").empty();
+            $("#content_container").load("academics_page.html #academics_container");
+            $("#content_container").addClass("history_projects_page");
+            $("#wrapper_for_animation").addClass("animated fadeInDown");
+            $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
+            $(".active").removeClass("active");
+            $("#nav_bar_academics").addClass("active");
+        }, 1000);
+    }),
+
     $(document).on("click", "#nav_bar_projects", function()
     {
         $("body").css("overflow", "hidden");
