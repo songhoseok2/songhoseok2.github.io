@@ -88,13 +88,19 @@ p
 .academics_projects_description
 {
   list-style-type: disc;
-  font-size: 25px;
+  font-size: 20px;
   color: #C6C3FF;
+  line-height: 25px;
 }
 
 .academics_classes
 {
   margin-bottom: 200px;
+}
+
+.class_works
+{
+  margin-bottom: 15px;
 }
 
 .sub_header
