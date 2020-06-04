@@ -10,7 +10,10 @@
     <form name="email_form" method="POST" id="gform" class="gform pure-form pure-form-stacked" data-email="from_email@example.com"
           action="https://script.google.com/macros/s/AKfycbztjkBf1-F7L8XCBezkwgvKjf0OtIdNqpbBmnrK/exec"
           target="hiddenFrame"
-          onsubmit="alert('Your Email was successfully sent. Thank you for contacting me.');">
+          onsubmit=
+          "alert('Your Email was successfully sent. Thank you for contacting me.');
+          grecaptcha.reset();
+          document.getElementById('send_button').disabled = true;">
 
       <div class="row">
           <div class="col-xs-3">
@@ -45,32 +48,21 @@
       
       <br>
       
+      <div class="row" style="margin-bottom: 15px;">
+        <div style="float: right;">
+          <button id="send_button" class="btn btn-info btn-lg" disabled="true">
+            <span class="glyphicon glyphicon-envelope"></span> Send
+          </button>
+          <button class="btn btn-danger btn-lg" type="reset">
+            <span class="glyphicon glyphicon-trash"></span> Reset
+          </button>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-xs-4"></div>
-        <div class="row">
-          <div class="col-xs-1"></div>
-          <div class="row">
-            <div class="col-xs-1"></div>
-            <div class="row">
-              <div class="col-xs-1"></div>
-              <div class="row">
-                <div class="row">
-                  <div class="row">
-                    <div class="col-xs-4">
-                      <button id="send_button" class="btn btn-info btn-lg">
-                        <span class="glyphicon glyphicon-envelope"></span> Send
-                      </button>
-                      <button class="btn btn-danger btn-lg" type="reset">
-                        <span class="glyphicon glyphicon-trash"></span> Reset
-                      </button>
-                    </div> <!--col-xs-4-->
-                  </div> <!--row-->
-                </div> <!--row-->
-              </div> <!--row-->
-            </div> <!--row-->
-          </div> <!--row-->
-        </div> <!--row-->
-      </div> <!--row-->
+        <div style="float: right;">
+          <div id="captcha_container" class="g-recaptcha" data-sitekey="6LccgwAVAAAAADI8X2EzDYeEm5s2MNx0U9K2h3fP"></div>
+        </div>
+      </div>
       
     </form>
 

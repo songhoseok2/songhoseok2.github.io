@@ -1,4 +1,23 @@
 /*jshint esversion: 6 */
+
+function onloadCallback()
+{
+    document.getElementById("send_button").disabled = true;
+    captchaContainer = grecaptcha.render('captcha_container',
+    {
+        'sitekey': '6LccgwAVAAAAADI8X2EzDYeEm5s2MNx0U9K2h3fP',
+        'callback': function(response)
+        {
+            document.getElementById("send_button").disabled = false;
+        },
+
+        'expired-callback': function(response)
+        {
+            document.getElementById("send_button").disabled = true;
+        }
+    });
+};
+
 $(document).ready(
     function()
     {
@@ -93,6 +112,8 @@ $(document).ready(
             $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
             $(".active").removeClass("active");
             $("#nav_bar_contact").addClass("active");
+
+            $.getScript("https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit");
         }, 1000);
     })
 );
