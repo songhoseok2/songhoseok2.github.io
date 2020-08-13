@@ -133,6 +133,24 @@ $(document).ready(
 
             $.getScript("https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit");
         }, 1000);
+    }),
+
+    $(document).on("click", "#seam_carve_snapshots", function()
+    {        
+        $("body").css("overflow", "hidden");
+        $("#wrapper_for_animation").addClass("animated fadeOutUp");
+        setTimeout(function()
+        {
+            $("#wrapper_for_animation").removeClass();
+            $("#content_container").removeClass();
+            $("#content_container").empty();
+            $("#content_container").load("seam_carve_snapshots.html #seam_carve_snapshots_container");
+            $("#wrapper_for_animation").addClass("animated fadeInDown");
+            $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
+            $(".active").removeClass("active");
+
+            $.getScript("https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit");
+        }, 1000);
     })
 );
 
