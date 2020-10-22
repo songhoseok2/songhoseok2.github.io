@@ -21,7 +21,7 @@ function onloadCallback()
 $(document).ready(
     function()
     {
-        $("#content_container").load("about_page.html #about_container");
+        $("#content_container").load("html/about_page.html #about_container");
         $("#content_container").addClass("about_page");
     },
 
@@ -34,7 +34,7 @@ $(document).ready(
             $("#wrapper_for_animation").removeClass();
             $("#content_container").removeClass();
             $("#content_container").empty();
-            $("#content_container").load("about_page.html #about_container");
+            $("#content_container").load("html/about_page.html #about_container");
             $("#content_container").addClass("about_page");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
             //overflow must remain hidden for about page
@@ -52,7 +52,7 @@ $(document).ready(
             $("#wrapper_for_animation").removeClass();
             $("#content_container").removeClass();
             $("#content_container").empty();
-            $("#content_container").load("history_page.html #history_container");
+            $("#content_container").load("html/history_page.html #history_container");
             $("#content_container").addClass("history_projects_page");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
             $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
@@ -70,7 +70,7 @@ $(document).ready(
             $("#wrapper_for_animation").removeClass();
             $("#content_container").removeClass();
             $("#content_container").empty();
-            $("#content_container").load("academics_page.html #academics_container");
+            $("#content_container").load("html/academics_page.html #academics_container");
             $("#content_container").addClass("history_projects_page");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
             $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
@@ -88,7 +88,7 @@ $(document).ready(
             $("#wrapper_for_animation").removeClass();
             $("#content_container").removeClass();
             $("#content_container").empty();
-            $("#content_container").load("projects_page.html #projects_container");
+            $("#content_container").load("html/projects_page.html #projects_container");
             $("#content_container").addClass("history_projects_page");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
             $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
@@ -106,7 +106,7 @@ $(document).ready(
             $("#wrapper_for_animation").removeClass();
             $("#content_container").removeClass();
             $("#content_container").empty();
-            $("#content_container").load("contact_page.html #contact_container");
+            $("#content_container").load("html/contact_page.html #contact_container");
             $("#content_container").addClass("contact_page");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
             $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
@@ -126,7 +126,7 @@ $(document).ready(
             $("#wrapper_for_animation").removeClass();
             $("#content_container").removeClass();
             $("#content_container").empty();
-            $("#content_container").load("anonyblog_snapshots.html #anonyblog_snapshots_container");
+            $("#content_container").load("html/anonyblog_snapshots.html #anonyblog_snapshots_container");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
             $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
             $(".active").removeClass("active");
@@ -144,7 +144,7 @@ $(document).ready(
             $("#wrapper_for_animation").removeClass();
             $("#content_container").removeClass();
             $("#content_container").empty();
-            $("#content_container").load("seam_carve_snapshots.html #seam_carve_snapshots_container");
+            $("#content_container").load("html/seam_carve_snapshots.html #seam_carve_snapshots_container");
             $("#wrapper_for_animation").addClass("animated fadeInDown");
             $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
             $(".active").removeClass("active");
