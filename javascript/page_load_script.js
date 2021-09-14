@@ -117,6 +117,24 @@ $(document).ready(
         }, 1000);
     }),
 
+    $(document).on("click", "#myhomepage_snapshots", function()
+    {        
+        $("body").css("overflow", "hidden");
+        $("#wrapper_for_animation").addClass("animated fadeOutUp");
+        setTimeout(function()
+        {
+            $("#wrapper_for_animation").removeClass();
+            $("#content_container").removeClass();
+            $("#content_container").empty();
+            $("#content_container").load("html/myhomepage_snapshots.html #myhomepage_snapshots_container");
+            $("#wrapper_for_animation").addClass("animated fadeInDown");
+            $("body").css({"overflow-x": "hidden", "overflow-y": "auto"});
+            $(".active").removeClass("active");
+
+            $.getScript("https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit");
+        }, 1000);
+    }),
+
     $(document).on("click", "#anonyblog_snapshots", function()
     {        
         $("body").css("overflow", "hidden");
